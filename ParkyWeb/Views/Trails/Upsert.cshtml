@@ -21,6 +21,7 @@
                 <div class="col-8">
                     @Html.DropDownListFor(m=>m.Trail.NationalPark,Model.NationalParkList,
                         "-Please select a park-", new{@class="form-control"} )
+                        <span asp-validation-for="Trail.NationalParkId" class="text-danger"></span>
                 </div>
             </div> 
             <div class="form-group row">
